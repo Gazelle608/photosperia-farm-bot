@@ -1,0 +1,296 @@
+[
+  {
+    "plant": "Blue Moss",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "species_present", "species": "Loamcrawlers" },
+        { "type": "coverage", "plant": "Grass", "operator": ">", "value": 0.03 },
+        { "type": "coverage", "plant": "Rose Bush", "operator": ">", "value": 0.01 }
+      ]
+    }
+  },
+  {
+    "plant": "Orange Blossom",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        {
+          "op": "OR",
+          "children": [
+            { "type": "species_present", "species": "Nectaris" },
+            { "type": "species_present", "species": "Solwings" }
+          ]
+        },
+        { "type": "coverage", "plant": "Rose Bush", "operator": ">", "value": 0.02 }
+      ]
+    }
+  },
+  {
+    "plant": "Glowcap Fungus",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "species_present", "species": "Loamcrawlers" },
+        { "type": "feature_count", "feature": "dead_matter", "operator": ">", "value": 0.05 }
+      ]
+    }
+  },
+  {
+    "plant": "Stone Reed",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "species_present", "species": "Virexids" }
+      ]
+    }
+  },
+  {
+    "plant": "Crimson Vine",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        {
+          "op": "OR",
+          "children": [
+            { "type": "species_present", "species": "Nectaris" },
+            { "type": "species_present", "species": "Canorals" }
+          ]
+        },
+        { "type": "coverage", "plant": "Rose Bush", "operator": ">", "value": 0.0 },
+        { "type": "coverage", "plant": "Lavender", "operator": ">", "value": 0.0 }
+      ]
+    }
+  },
+  {
+    "plant": "Silver Fern",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        {
+          "op": "OR",
+          "children": [
+            { "type": "species_present", "species": "Loamcrawlers" },
+            { "type": "species_present", "species": "Grazeleths" }
+          ]
+        },
+        { "type": "coverage", "plant": "Blue Moss", "operator": ">", "value": 0.03 }
+      ]
+    }
+  },
+  {
+    "plant": "Purple Canopy Tree",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Blue Moss", "operator": ">", "value": 0.01 },
+        { "type": "coverage", "plant": "Crimson Vine", "operator": ">", "value": 0.04 }
+      ]
+    }
+  },
+  {
+    "plant": "Whiteveil Mycelium",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Glowcap Fungus", "operator": ">", "value": 0.05 },
+        {
+          "op": "OR",
+          "children": [
+            { "type": "species_present", "species": "Loamcrawlers" },
+            { "type": "species_present", "species": "Rhizorends" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "plant": "Emberroot Tree",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Whiteveil Mycelium", "operator": ">", "value": 0.05 },
+        { "type": "count", "plant": "Purple Canopy Tree", "operator": ">=", "value": 4 }
+      ]
+    }
+  },
+  {
+    "plant": "Moonpetal Lily",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "species_present", "species": "Nectaris" },
+        { "type": "coverage", "plant": "Lavender", "operator": ">", "value": 0.04 },
+        { "type": "coverage", "plant": "Blue Moss", "operator": ">", "value": 0.02 }
+      ]
+    }
+  },
+  {
+    "plant": "Ironthorn Shrub",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "species_present", "species": "Grazeleths" },
+        { "type": "coverage", "plant": "Rose Bush", "operator": ">", "value": 0.04 }
+      ]
+    }
+  },
+  {
+    "plant": "Crystal Cactus",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "event", "event": "Drought" },
+        { "type": "coverage", "plant": "Grass", "operator": ">", "value": 0.04 }
+      ]
+    }
+  },
+  {
+    "plant": "Mire Bloom",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Blue Moss", "operator": ">", "value": 0.05 },
+        { "type": "event", "event": "Rain" }
+      ]
+    }
+  },
+  {
+    "plant": "Razorgrass",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "species_present", "species": "Verdelopes" },
+        { "type": "coverage", "plant": "Grass", "operator": ">", "value": 0.05 }
+      ]
+    }
+  },
+  {
+    "plant": "Skyvine",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Crimson Vine", "operator": ">", "value": 0.04 },
+        { "type": "count", "plant": "Purple Canopy Tree", "operator": ">=", "value": 3 }
+      ]
+    }
+  },
+  {
+    "plant": "Ghost Orchid",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Glowcap Fungus", "operator": ">", "value": 0.03 },
+        { "type": "coverage", "plant": "Moonpetal Lily", "operator": ">", "value": 0.03 }
+      ]
+    }
+  },
+  {
+    "plant": "Amber Fern",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Silver Fern", "operator": ">", "value": 0.06 },
+        { "type": "species_present", "species": "Loamcrawlers" },
+        { "type": "species_absent", "species": "Monocryx" }
+      ]
+    }
+  },
+  {
+    "plant": "Thornheart Bramble",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Ironthorn Shrub", "operator": ">", "value": 0.05 },
+        { "type": "coverage", "plant": "Crimson Vine", "operator": ">", "value": 0.03 }
+      ]
+    }
+  },
+  {
+    "plant": "Sporewood Tree",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Whiteveil Mycelium", "operator": ">", "value": 0.03 },
+        { "type": "count", "plant": "Purple Canopy Tree", "operator": ">=", "value": 4 }
+      ]
+    }
+  },
+  {
+    "plant": "Sunshard Bloom",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Orange Blossom", "operator": ">", "value": 0.02 },
+        { "type": "coverage", "plant": "Moonpetal Lily", "operator": ">", "value": 0.04 },
+        { "type": "species_present", "species": "Nectaris" },
+        { "type": "species_present", "species": "Solwings" }
+      ]
+    }
+  },
+  {
+    "plant": "Ashroot Bramble",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Emberroot Tree", "operator": ">", "value": 0.0 },
+        { "type": "feature_count", "feature": "burnt_soil", "operator": ">=", "value": 20 }
+      ]
+    }
+  },
+  {
+    "plant": "Living Topiary",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Silver Fern", "operator": ">", "value": 0.04 },
+        { "type": "count", "plant": "Purple Canopy Tree", "operator": ">=", "value": 3 },
+        { "type": "species_present", "species": "Canorals" }
+      ]
+    }
+  },
+  {
+    "plant": "Bloodbloom",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Crimson Vine", "operator": ">", "value": 0.05 },
+        { "type": "species_present", "species": "Rhizorends" }
+      ]
+    }
+  },
+  {
+    "plant": "Starcap Colony",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Whiteveil Mycelium", "operator": ">", "value": 0.05 },
+        { "type": "coverage", "plant": "Glowcap Fungus", "operator": ">", "value": 0.03 },
+        { "type": "coverage", "plant": "Ghost Orchid", "operator": ">", "value": 0.01 }
+      ]
+    }
+  },
+  {
+    "plant": "Phoenix Bloom",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "coverage", "plant": "Emberroot Tree", "operator": ">", "value": 0.0 },
+        { "type": "coverage", "plant": "Ashroot Bramble", "operator": ">", "value": 0.04 },
+        { "type": "event", "event": "Ash Eclipse" }
+      ]
+    }
+  },
+  {
+    "plant": "Worldtree Sapling",
+    "unlock": {
+      "op": "AND",
+      "children": [
+        { "type": "count", "plant": "Oak Tree", "operator": ">=", "value": 6 },
+        { "type": "count", "plant": "Purple Canopy Tree", "operator": ">=", "value": 6 },
+        { "type": "count", "plant": "Sporewood Tree", "operator": ">=", "value": 4 },
+        { "type": "species_present", "species": "Barkskips" }
+      ]
+    }
+  }
+]

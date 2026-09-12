@@ -1,0 +1,101 @@
+{
+  "Ground Cover": [
+    "Grass",
+    "Blue Moss",
+    "Razorgrass"
+  ],
+  "Flowering Plants": [
+    "Rose Bush",
+    "Lavender",
+    "Dwarf Sunflower",
+    "Orange Blossom",
+    "Moonpetal Lily",
+    "Mire Bloom",
+    "Ghost Orchid",
+    "Sunshard Bloom",
+    "Bloodbloom",
+    "Phoenix Bloom"
+  ],
+  "Pollination Plants": [
+    "Lavender",
+    "Rose Bush",
+    "Orange Blossom",
+    "Moonpetal Lily",
+    "Mire Bloom",
+    "Ghost Orchid",
+    "Sunshard Bloom"
+  ],
+  "Seed Plants": [
+    "Dwarf Sunflower",
+    "Oak Tree",
+    "Purple Canopy Tree",
+    "Emberroot Tree",
+    "Crystal Cactus",
+    "Phoenix Bloom",
+    "Worldtree Sapling"
+  ],
+  "Flowering Seed Plants": [
+    "Dwarf Sunflower",
+    "Phoenix Bloom"
+  ],
+  "Trees": [
+    "Oak Tree",
+    "Purple Canopy Tree",
+    "Emberroot Tree",
+    "Sporewood Tree",
+    "Worldtree Sapling"
+  ],
+  "Bushes / Shrubs": [
+    "Rose Bush",
+    "Ironthorn Shrub",
+    "Living Topiary"
+  ],
+  "Vines": [
+    "Crimson Vine",
+    "Skyvine"
+  ],
+  "Ferns": [
+    "Silver Fern",
+    "Amber Fern"
+  ],
+  "Fungi / Mycelial Species": [
+    "Glowcap Fungus",
+    "Whiteveil Mycelium",
+    "Starcap Colony"
+  ],
+  "Fireadapted Species": [
+    "Emberroot Tree",
+    "Ashroot Bramble",
+    "Phoenix Bloom"
+  ],
+  "Moisturedependent Species": [
+    "Blue Moss",
+    "Mire Bloom",
+    "Ghost Orchid"
+  ],
+  "Deep-root Species": [
+    "Grass",
+    "Silver Fern",
+    "Stone Reed",
+    "Oak Tree",
+    "Emberroot Tree",
+    "Crystal Cactus",
+    "Amber Fern",
+    "Ashroot Bramble",
+    "Worldtree Sapling"
+  ],
+  "Shallow-root Species": [
+    "Rose Bush",
+    "Lavender",
+    "Blue Moss",
+    "Crimson Vine",
+    "Orange Blossom",
+    "Moonpetal Lily",
+    "Mire Bloom"
+  ],
+  "Networkroot Species": [
+    "Whiteveil Mycelium",
+    "Sporewood Tree",
+    "Starcap Colony"
+  ]
+}

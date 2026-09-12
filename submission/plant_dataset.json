@@ -1,0 +1,655 @@
+[
+  {
+    "plant": "Grass",
+    "index": 1,
+    "growth": {
+      "time_to_maturity": 1,
+      "spread_rate": 2,
+      "spread_mechanism": "Shoots",
+      "spread_type": "VonNeumann",
+      "spread_range": 1,
+      "root_type": "Deep",
+      "invasiveness_rank": 1
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "no_shade_survival" }
+      ],
+      "special": []
+    },
+    "role": "Fast filler plant"
+  },
+  {
+    "plant": "Rose Bush",
+    "index": 2,
+    "growth": {
+      "time_to_maturity": 10,
+      "spread_rate": 2,
+      "spread_mechanism": "Shoots",
+      "spread_type": "Row",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 2
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "no_winter_spread" }
+      ],
+      "special": []
+    },
+    "role": "Slow directional spreader"
+  },
+  {
+    "plant": "Blue Moss",
+    "index": 3,
+    "growth": {
+      "time_to_maturity": 3,
+      "spread_rate": 3,
+      "spread_mechanism": "Spores",
+      "spread_type": "Moore",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 3
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "die_if_neighbors_greater_than", "value": 4 }
+      ],
+      "special": [
+        { "type": "adjacent_maturity_boost", "value": 1 }
+      ]
+    },
+    "role": "Support / synergy plant"
+  },
+  {
+    "plant": "Crimson Vine",
+    "index": 4,
+    "growth": {
+      "time_to_maturity": 4,
+      "spread_rate": 1,
+      "spread_mechanism": "Shoots",
+      "spread_type": "Column",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 9
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "die_if_isolated" }
+      ],
+      "special": []
+    },
+    "role": "Needy creeper"
+  },
+  {
+    "plant": "Dwarf Sunflower",
+    "index": 5,
+    "growth": {
+      "time_to_maturity": 5,
+      "spread_rate": 4,
+      "spread_mechanism": "Seeds",
+      "spread_type": "CrossHatch",
+      "spread_range": 2,
+      "root_type": "Shallow",
+      "invasiveness_rank": 4
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "no_shade_spread" }
+      ],
+      "special": [
+        { "type": "adjacent_shade_penalty" }
+      ]
+    },
+    "role": "Spacing challenge"
+  },
+  {
+    "plant": "Lavender",
+    "index": 6,
+    "growth": {
+      "time_to_maturity": 4,
+      "spread_rate": 3,
+      "spread_mechanism": "Pollination",
+      "spread_type": "CrossHatch",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 2
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "no_winter_spread" }
+      ],
+      "special": []
+    },
+    "role": "Pollination engine"
+  },
+  {
+    "plant": "Orange Blossom",
+    "index": 7,
+    "growth": {
+      "time_to_maturity": 6,
+      "spread_rate": 3,
+      "spread_mechanism": "Shoots",
+      "spread_type": "VonNeumann",
+      "spread_range": 4,
+      "root_type": "Shallow",
+      "invasiveness_rank": 7,
+      "conditional_modifiers": [
+        { "condition": "season_summer", "spread_rate": 4 }
+      ]
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": []
+    },
+    "role": "Summer burst expander"
+  },
+  {
+    "plant": "Silver Fern",
+    "index": 8,
+    "growth": {
+      "time_to_maturity": 7,
+      "spread_rate": 4,
+      "spread_mechanism": "Shoots",
+      "spread_type": "Row",
+      "spread_range": 1,
+      "root_type": "Deep",
+      "invasiveness_rank": 6
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": []
+    },
+    "role": "Tank / anchor"
+  },
+  {
+    "plant": "Glowcap Fungus",
+    "index": 9,
+    "growth": {
+      "time_to_maturity": 2,
+      "spread_rate": 3,
+      "spread_mechanism": "Spores",
+      "spread_type": "VonNeumann",
+      "spread_range": 1,
+      "root_type": "None",
+      "invasiveness_rank": 8
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "adjacent_maturity_penalty", "value": 2 },
+        { "type": "dead_matter_only_spread" }
+      ]
+    },
+    "role": "Decay mechanic"
+  },
+  {
+    "plant": "Purple Canopy Tree",
+    "index": 10,
+    "growth": {
+      "time_to_maturity": 15,
+      "spread_rate": 6,
+      "spread_mechanism": "Seeds",
+      "spread_type": "Moore",
+      "spread_range": 1,
+      "root_type": "Deep",
+      "invasiveness_rank": 10
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "shade_radius", "value": 2 }
+      ]
+    },
+    "role": "Shade caster"
+  },
+  {
+    "plant": "Stone Reed",
+    "index": 11,
+    "growth": {
+      "time_to_maturity": 5,
+      "spread_rate": 4,
+      "spread_mechanism": "Shoots",
+      "spread_type": "Column",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 5
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "must_be_adjacent_to", "feature": "rock_or_path" }
+      ],
+      "special": []
+    },
+    "role": "Terrain exploitation"
+  },
+  {
+    "plant": "Oak Tree",
+    "index": 12,
+    "growth": {
+      "time_to_maturity": 20,
+      "spread_rate": 7,
+      "spread_mechanism": "Seeds",
+      "spread_type": "Moore",
+      "spread_range": 2,
+      "root_type": "Deep",
+      "invasiveness_rank": 10
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "shade_radius", "value": 4 }
+      ]
+    },
+    "role": "Late-game dominant"
+  },
+  {
+    "plant": "Emberroot Tree",
+    "index": 13,
+    "growth": {
+      "time_to_maturity": 15,
+      "spread_rate": 6,
+      "spread_mechanism": "Seeds",
+      "spread_type": "Moore",
+      "spread_range": 4,
+      "root_type": "Deep",
+      "invasiveness_rank": 13
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "burnt_soil_radius", "value": 2 }
+      ]
+    },
+    "role": "Hazard species"
+  },
+  {
+    "plant": "Whiteveil Mycelium",
+    "index": 14,
+    "growth": {
+      "time_to_maturity": 8,
+      "spread_rate": 2,
+      "spread_mechanism": "Shoots",
+      "spread_type": "CrossHatch",
+      "spread_range": 2,
+      "root_type": "Deep",
+      "invasiveness_rank": 11
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "subsurface_growth" },
+        { "type": "nutrient_transfer_network" }
+      ]
+    },
+    "role": "System-level synergy"
+  },
+  {
+    "plant": "Moonpetal Lily",
+    "index": 15,
+    "growth": {
+      "time_to_maturity": 5,
+      "spread_rate": 4,
+      "spread_mechanism": "Pollination",
+      "spread_type": "Column",
+      "spread_range": 2,
+      "root_type": "Shallow",
+      "invasiveness_rank": 4
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "shade_required" }
+      ],
+      "special": []
+    },
+    "role": "Shade specialist"
+  },
+  {
+    "plant": "Ironthorn Shrub",
+    "index": 16,
+    "growth": {
+      "time_to_maturity": 7,
+      "spread_rate": 4,
+      "spread_mechanism": "Shoots",
+      "spread_type": "VonNeumann",
+      "spread_range": 1,
+      "root_type": "Deep",
+      "invasiveness_rank": 6
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": []
+    },
+    "role": "Defensive protector"
+  },
+  {
+    "plant": "Crystal Cactus",
+    "index": 17,
+    "growth": {
+      "time_to_maturity": 8,
+      "spread_rate": 4,
+      "spread_mechanism": "Seeds",
+      "spread_type": "VonNeumann",
+      "spread_range": 2,
+      "root_type": "Deep",
+      "invasiveness_rank": 5
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "soil_nutrient_regeneration" }
+      ]
+    },
+    "role": "Soil restoration"
+  },
+  {
+    "plant": "Mire Bloom",
+    "index": 18,
+    "growth": {
+      "time_to_maturity": 5,
+      "spread_rate": 3,
+      "spread_mechanism": "Pollination",
+      "spread_type": "VonNeumann",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 7
+    },
+    "preferred_soil": [0, 1, 2],
+    "rules": {
+      "weaknesses": [
+        { "type": "must_be_adjacent_to", "feature": "water" }
+      ],
+      "special": []
+    },
+    "role": "Moisture dependent"
+  },
+  {
+    "plant": "Razorgrass",
+    "index": 19,
+    "growth": {
+      "time_to_maturity": 2,
+      "spread_rate": 1,
+      "spread_mechanism": "Shoots",
+      "spread_type": "CrossHatch",
+      "spread_range": 1,
+      "root_type": "Deep",
+      "invasiveness_rank": 8
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "animal_avoidance", "species": "Verdelopes" }
+      ]
+    },
+    "role": "Deterrent"
+  },
+  {
+    "plant": "Skyvine",
+    "index": 20,
+    "growth": {
+      "time_to_maturity": 4,
+      "spread_rate": 1,
+      "spread_mechanism": "Shoots",
+      "spread_type": "Column",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 12
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "crack_spread" }
+      ]
+    },
+    "role": "Terrain bypass"
+  },
+  {
+    "plant": "Ghost Orchid",
+    "index": 21,
+    "growth": {
+      "time_to_maturity": 8,
+      "spread_rate": 4,
+      "spread_mechanism": "Pollination",
+      "spread_type": "Moore",
+      "spread_range": 1,
+      "root_type": "Deep",
+      "invasiveness_rank": 11
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "shade_required" }
+      ],
+      "special": []
+    },
+    "role": "Rare shade species"
+  },
+  {
+    "plant": "Amber Fern",
+    "index": 22,
+    "growth": {
+      "time_to_maturity": 12,
+      "spread_rate": 6,
+      "spread_mechanism": "Spores",
+      "spread_type": "VonNeumann",
+      "spread_range": 1,
+      "root_type": "Deep",
+      "invasiveness_rank": 10
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": []
+    },
+    "role": "Stability species"
+  },
+  {
+    "plant": "Thornheart Bramble",
+    "index": 23,
+    "growth": {
+      "time_to_maturity": 6,
+      "spread_rate": 3,
+      "spread_mechanism": "Shoots",
+      "spread_type": "VonNeumann",
+      "spread_range": 3,
+      "root_type": "Shallow",
+      "invasiveness_rank": 9
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "neighbor_spread_slowdown", "value": 1 }
+      ]
+    },
+    "role": "Territory control"
+  },
+  {
+    "plant": "Sporewood Tree",
+    "index": 24,
+    "growth": {
+      "time_to_maturity": 15,
+      "spread_rate": 4,
+      "spread_mechanism": "Spores",
+      "spread_type": "Moore",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 12
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "boost_whiteveil_spread", "value": 1 }
+      ]
+    },
+    "role": "Fungal ecosystem builder"
+  },
+  {
+    "plant": "Sunshard Bloom",
+    "index": 25,
+    "growth": {
+      "time_to_maturity": 10,
+      "spread_rate": 4,
+      "spread_mechanism": "Pollination",
+      "spread_type": "Moore",
+      "spread_range": 1,
+      "root_type": "Shallow",
+      "invasiveness_rank": 15
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "adjacent_maturity_boost", "value": 2 }
+      ]
+    },
+    "role": "Ultimate support"
+  },
+  {
+    "plant": "Ashroot Bramble",
+    "index": 26,
+    "growth": {
+      "time_to_maturity": 5,
+      "spread_rate": 3,
+      "spread_mechanism": "Shoots",
+      "spread_type": "VonNeumann",
+      "spread_range": 2,
+      "root_type": "Deep",
+      "invasiveness_rank": 13
+    },
+    "preferred_soil": [3],
+    "rules": {
+      "weaknesses": [
+        { "type": "must_be_burnt_soil" }
+      ],
+      "special": []
+    },
+    "role": "Fire specialist"
+  },
+  {
+    "plant": "Living Topiary",
+    "index": 27,
+    "growth": {
+      "time_to_maturity": 12,
+      "spread_rate": 4,
+      "spread_mechanism": "Shoots",
+      "spread_type": "CrossHatch",
+      "spread_range": 2,
+      "root_type": "Deep",
+      "invasiveness_rank": 14
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [
+        { "type": "no_adjacent_plants" }
+      ],
+      "special": []
+    },
+    "role": "Adaptive exclusion species"
+  },
+  {
+    "plant": "Bloodbloom",
+    "index": 28,
+    "growth": {
+      "time_to_maturity": 6,
+      "spread_rate": 4,
+      "spread_mechanism": "Pollination",
+      "spread_type": "Moore",
+      "spread_range": 3,
+      "root_type": "Shallow",
+      "invasiveness_rank": 14
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "adjacent_maturity_penalty", "value": 2 }
+      ]
+    },
+    "role": "Ecosystem predator"
+  },
+  {
+    "plant": "Starcap Colony",
+    "index": 29,
+    "growth": {
+      "time_to_maturity": 10,
+      "spread_rate": 2,
+      "spread_mechanism": "Spores",
+      "spread_type": "CrossHatch",
+      "spread_range": 2,
+      "root_type": "Deep",
+      "invasiveness_rank": 16
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "coexist_all_species" }
+      ]
+    },
+    "role": "Diversity anchor"
+  },
+  {
+    "plant": "Phoenix Bloom",
+    "index": 30,
+    "growth": {
+      "time_to_maturity": 7,
+      "spread_rate": 3,
+      "spread_mechanism": "Seeds",
+      "spread_type": "Moore",
+      "spread_range": 3,
+      "root_type": "Deep",
+      "invasiveness_rank": 17
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "resurrect_after_destruction" },
+        { "type": "burnt_soil_maturity_boost", "value": 2 }
+      ]
+    },
+    "role": "Regeneration specialist"
+  },
+  {
+    "plant": "Worldtree Sapling",
+    "index": 31,
+    "growth": {
+      "time_to_maturity": 25,
+      "spread_rate": 10,
+      "spread_mechanism": "Seeds",
+      "spread_type": "Moore",
+      "spread_range": 2,
+      "root_type": "Deep",
+      "invasiveness_rank": 18
+    },
+    "preferred_soil": [0, 1],
+    "rules": {
+      "weaknesses": [],
+      "special": [
+        { "type": "auto_unlock_synergy_species", "species": ["Barkskips", "Canorals"] }
+      ]
+    },
+    "role": "Final ecosystem goal"
+  }
+]
