@@ -1,0 +1,283 @@
+[
+  {
+    "id": "nectaris",
+    "name": "Nectaris",
+    "requirements": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "coverage",
+          "species": ["Lavender"],
+          "threshold": 0.02,
+          "operator": ">="
+        },
+        {
+          "type": "group_coverage",
+          "species_group": ["Lavender", "Rose Bush", "Dwarf Sunflower", "Orange Blossom"],
+          "threshold": 0.02,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "spread_rate",
+        "target": "Pollination Plants",
+        "value": 1.5,
+        "mode": "multiply"
+      },
+      {
+        "type": "maturation_rate",
+        "target": "Flowering Plants",
+        "value": 1.1,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "solwings",
+    "name": "Solwings",
+    "requirements": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "coverage",
+          "species": ["Dwarf Sunflower"],
+          "threshold": 0.03,
+          "operator": ">="
+        },
+        {
+          "type": "coverage",
+          "species": ["Rose Bush"],
+          "threshold": 0.02,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "seed_dispersal",
+        "target": "Flowering Seed Plants",
+        "value": 1.5,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "barkskips",
+    "name": "Barkskips",
+    "requirements": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "count",
+          "species": "Oak Tree",
+          "threshold": 8,
+          "operator": ">="
+        },
+        {
+          "type": "count",
+          "species": "Worldtree Sapling",
+          "threshold": 1,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "spread_rate",
+        "target": "Trees",
+        "value": 1.1,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "verdelopes",
+    "name": "Verdelopes",
+    "requirements": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "coverage",
+          "species": ["Grass"],
+          "threshold": 0.05,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "spread_rate",
+        "target": "Grass",
+        "value": 1.1,
+        "mode": "multiply"
+      },
+      {
+        "type": "maturation_rate",
+        "target": "Rose Bush",
+        "value": 0.9,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "canorals",
+    "name": "Canorals",
+    "requirements": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "count",
+          "species_group": ["Trees"],
+          "threshold": 10,
+          "operator": ">="
+        },
+        {
+          "type": "group_coverage",
+          "species_group": ["Flowering Plants"],
+          "threshold": 0.05,
+          "operator": ">="
+        },
+        {
+          "type": "count",
+          "species": "Worldtree Sapling",
+          "threshold": 1,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "spread_range",
+        "target": "Seed Plants",
+        "value": 1.05,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "loamcrawlers",
+    "name": "Loamcrawlers",
+    "requirements": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "coverage",
+          "species": ["Grass"],
+          "threshold": 0.04,
+          "operator": ">="
+        },
+        {
+          "type": "count",
+          "species": "Rose Bush",
+          "threshold": 10,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "soil_nutrient_regeneration",
+        "target": "soil",
+        "value": 1.05,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "virexids",
+    "name": "Virexids",
+    "requirements": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "count",
+          "species": "Lavender",
+          "threshold": 10,
+          "operator": ">="
+        },
+        {
+          "type": "count",
+          "species": "Grass",
+          "threshold": 10,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "spread_rate",
+        "target": "Shallow-root Species",
+        "value": 1.1,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "grazeleths",
+    "name": "Grazeleths",
+    "requirements": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "coverage",
+          "species": ["Grass"],
+          "threshold": 0.04,
+          "operator": ">="
+        },
+        {
+          "type": "count",
+          "species_group": ["Rose Bush", "Lavender", "Orange Blossom"],
+          "threshold": 10,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": [
+      {
+        "type": "soil_nutrient_regeneration",
+        "target": "soil",
+        "value": 1.15,
+        "mode": "multiply"
+      },
+      {
+        "type": "regression_rate",
+        "target": "Flowering Plants",
+        "value": 2,
+        "mode": "multiply"
+      }
+    ]
+  },
+  {
+    "id": "monocryx",
+    "name": "Monocryx",
+    "requirements": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "dominance",
+          "mode": "single_species",
+          "threshold": 0.5
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "rhizorends",
+    "name": "Rhizorends",
+    "requirements": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "count",
+          "species_group": ["Shallow-root Species"],
+          "threshold": 25,
+          "operator": ">="
+        }
+      ]
+    },
+    "effects": []
+  }
+]
